@@ -1,0 +1,109 @@
+body{
+  background: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-bar{
+  background: lightgray;
+  min-height: 80px;
+}
+.fas{
+  font-size: 32px;
+}
+h1 a, h1 a:hover {
+  text-decoration: none;
+  color: #000;
+}
+.headercontent{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+}
+.headercontent ul li{
+  display: flex;
+  justify-content: space-between;
+  float: left;
+  padding: 10px;
+  text-align: center;
+}
+.headercontent ul li a {
+  text-decoration: none;
+  color: black;
+}
+.card{
+  margin: 20px;
+  text-align: center;
+  width: 40%;
+}
+.text-center{
+  margin-top: 80px;
+}
+.login{
+  background: lightgray;
+  padding: 30px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.jumbotron-img{
+  max-height: 400px;
+  width: 100%;
+  display: block;
+}
+.search-box{
+  min-height: 200px;
+  border: 1px solid black;
+  margin: 20px;
+  padding: 10px 30px;
+}
+.btn-search {
+  float: right;
+  margin: 20px 0px;
+}
+.place-detail {
+  margin: 20px;
+  border: 1px solid black;
+  min-height: 200px;
+  background: lightgray;
+  padding: 15px;
+}
+.btn-save{
+  margin: 10px;
+}
+.btn-info{
+  margin-right: 10px;
+}
+.btn-danger{
+  margin-right: 10px;
+}
+.description-image{
+  display: flex;
+  margin-top: 20px;
+}
+.img-fluid{
+  width: 200px;
+  height: 200px;
+  flex: 2;
+}
+.description{
+  flex: 10;
+  margin-left: 20px;
+}
+
+
+
+.botom {
+  background: blue;
+  min-height: 80px;
+  position: relative;
+  margin-bottom: 0;
+}
+.para {
+  position: absolute;
+  background: darkblue;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding-left: 8px;
+}

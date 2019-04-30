@@ -7,7 +7,9 @@ import React from 'react'
         <div className='container headercontent'>
             <h1><i className="fas fa-filter"></i>MyGT</h1>
             <ul>
-              <li><a href='/Home' onClick={props.logout}>log out</a></li>
+              <li><a href='/project'>search</a></li>
+              <li><a href='/saved'>my places</a></li>
+              <li><a href='/' onClick={props.logout}>log out</a></li>
             </ul>
         </div>
     </nav>
