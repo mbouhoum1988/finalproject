@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
 import fire from '../config/fire';
-import Project from './Project'
-import General from './General' 
+import Project from './projectpage/Project'
+import General from './homepages/General' 
 
 
 class SecureRoute extends Component {
@@ -16,7 +16,7 @@ class SecureRoute extends Component {
     
       authListener() {
         fire.auth().onAuthStateChanged((user) => {
-          console.log(user);
+          // console.log(user);
           if (user) {
             this.setState({
               user
