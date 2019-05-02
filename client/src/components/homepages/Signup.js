@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Header from './Header';
+
 import fire from '../../config/fire'
 
 
@@ -26,6 +28,7 @@ export class Signup extends Component {
   render() {
     return (
         <div>
+        <Header />
         <h2 className='text-center'>sign up</h2>
         <div className="col-md-4 login">
         <form>

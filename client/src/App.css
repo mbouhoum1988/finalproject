@@ -32,8 +32,12 @@ h1 a, h1 a:hover {
 }
 .card{
   margin: 20px;
-  text-align: center;
-  width: 40%;
+}
+.card-header{
+  text-align: left;
+}
+.card-body{
+  text-align: left;
 }
 .text-center{
   margin-top: 80px;
@@ -67,31 +71,17 @@ h1 a, h1 a:hover {
   background: lightgray;
   padding: 15px;
 }
+.detail-data{
+  float: left;
+}
 .btn-save{
   margin: 10px;
-}
-.btn-info{
-  margin-right: 10px;
+  float: right;
 }
 .btn-danger{
   margin-right: 10px;
+  float: right;
 }
-.description-image{
-  display: flex;
-  margin-top: 20px;
-}
-.img-fluid{
-  width: 200px;
-  height: 200px;
-  flex: 2;
-}
-.description{
-  flex: 10;
-  margin-left: 20px;
-}
-
-
-
 .botom {
   background: blue;
   min-height: 80px;
