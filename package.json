@@ -16,10 +16,31 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+<<<<<<< Updated upstream
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
   ]
+=======
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "firebase": "^5.11.0",
+    "font-awesome": "^4.7.0",
+    "gh-pages": "^2.0.1",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.5.4",
+    "postcss": "^7.0.14",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^2.1.1",
+    "route": "^0.2.5",
+    "serve": "^11.0.0",
+    "uuid": "^3.3.2"
+  }
+>>>>>>> Stashed changes
 }
