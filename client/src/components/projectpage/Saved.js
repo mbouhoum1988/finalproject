@@ -4,6 +4,8 @@ import Jumbotron from './Jumbotron'
 import Card from './Card'
 import Myplaces from './Myplaces'
 import Footer from './Footer'
+
+import fire from '../../config/fire'
 import API from '../../utils/API'
 
 export class Saved extends Component {
@@ -31,6 +33,10 @@ export class Saved extends Component {
       .then(res => this.loadPlaces())
       .catch(err => console.log(err));
   };
+
+  logout= () => {
+    fire.auth().signOut();
+}
 
   render() {
     return (
