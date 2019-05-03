@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import Header from './Header';
+import Footer from '../projectpage/Footer'
+
 import fire from '../../config/fire'
 
 
@@ -29,12 +32,13 @@ class Login extends Component {
   render() {
     return (
      
-     <div>   
-     <h2 className='text-center'>sign in</h2>
+     <div>  
+     <Header /> 
+     <h2 className='text-center'>Login</h2>
       <div className="col-md-4 login">
         <form>
             <div className="form-group">
-                <label htmlFor="email">Email address</label>
+                <label htmlFor="email">Email Address</label>
                 <input 
                     value={this.state.email} 
                     onChange={this.handleChange}
@@ -46,7 +50,7 @@ class Login extends Component {
                 /> 
             </div>    
             <div className="form-group">
-                <label htmlFor="password">password</label>
+                <label htmlFor="password">Password</label>
                 <input 
                     value={this.state.password} 
                     onChange={this.handleChange}
@@ -60,6 +64,7 @@ class Login extends Component {
             <button type="submit" onClick={this.login} className="btn btn-primary">Login</button>  
         </form>
       </div>
+      <Footer />
       </div>
     )
   }

@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import Header from './Header';
+import Footer from '../projectpage/Footer'
+
 import fire from '../../config/fire'
 
 
@@ -26,7 +29,8 @@ export class Signup extends Component {
   render() {
     return (
         <div>
-        <h2 className='text-center'>sign up</h2>
+        <Header />
+        <h2 className='text-center'>Sign Up</h2>
         <div className="col-md-4 login">
         <form>
             <div className="form-group">
@@ -38,7 +42,7 @@ export class Signup extends Component {
                     name="firstName"
                     className="form-control"
                     id="firstName"
-                    placeholder="Enter firstName" 
+                    placeholder="Enter first name" 
                 /> 
             </div>    
             <div className="form-group">
@@ -50,7 +54,7 @@ export class Signup extends Component {
                     name="lastName"
                     className="form-control"
                     id="lastName"
-                    placeholder="Enter lastName" 
+                    placeholder="Enter last name" 
                 /> 
             </div>    
             <div className="form-group">
@@ -66,7 +70,7 @@ export class Signup extends Component {
                 /> 
             </div>    
             <div className="form-group">
-                <label htmlFor="password">password</label>
+                <label htmlFor="password">Password</label>
                 <input 
                     value={this.state.password} 
                     onChange={this.handleChange}
@@ -77,9 +81,10 @@ export class Signup extends Component {
                     placeholder="Enter password" 
                 /> 
             </div>  
-            <button onClick={this.signup} className="btn btn-success">Signup</button>  
+            <button onClick={this.signup} className="btn btn-success">Sign Up</button>  
         </form>
       </div>
+      <Footer />
       </div>
     )
   }

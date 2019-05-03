@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/finalproject"
+  process.env.MONGODB_URI || "mongodb://placessearch:mb123456@ds151076.mlab.com:51076/heroku_7hjw8tv4"
 );
 
 app.listen(PORT, function() {

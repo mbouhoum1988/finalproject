@@ -4,7 +4,7 @@ const Search = (props) => {
     return (
       <div className="search-box">
             <h3>Search for places to visit</h3>
-            <p>places</p>
+            <p></p>
             <input 
                     className="form-control" 
                     placeholder="search"
@@ -14,7 +14,7 @@ const Search = (props) => {
             <button 
                 className="btn btn-primary btn-search"
                 onClick={props.handleClick}
-                > search </button>
+                > Search </button>
       </div>
     )
   }
