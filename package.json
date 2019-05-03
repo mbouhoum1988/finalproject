@@ -16,14 +16,12 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-<<<<<<< Updated upstream
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
   ]
-=======
   "dependencies": {
     "axios": "^0.18.0",
     "cors": "^2.8.5",
@@ -42,5 +40,4 @@
     "serve": "^11.0.0",
     "uuid": "^3.3.2"
   }
->>>>>>> Stashed changes
 }
