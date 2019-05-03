@@ -7,10 +7,10 @@ class ProjectRoute extends Component {
   render() {
     return (
       <div>
-      <Switch>
-         <Route exact path='/project' component={Project} />
-         <Route exact path='/saved' component={Saved} />
-      </Switch>
+        <Switch>
+          <Route exact path='/project' component={Project} />
+          <Route exact path='/saved' component={Saved} />
+        </Switch>
       </div>
     )
   }
