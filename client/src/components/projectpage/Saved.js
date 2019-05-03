@@ -41,7 +41,7 @@ export class Saved extends Component {
                 heading={"saved places:"}
               >
                 {!this.state.places.length ? (
-                  <h1 className="nobook">you have no places saved</h1>
+                  <h1 className="nobook">You have no places saved</h1>
                 ) : (
                     this.state.places.map((place) => {
                       return (

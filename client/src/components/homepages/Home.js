@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from './Header';
+import Footer from '../projectpage/Footer'
 
 
  class Home extends Component {
@@ -7,10 +8,27 @@ import Header from './Header';
     return(
       <div>
         <Header />
-         <h1 className='text-center'>Hello World</h1>
-      </div>
+        <div class="jumbotron hero">
+        <div class="container"> 
+    
+            <div class="row">
+                <div id="heroText"class="col-md-10 get-it animated slideInRight">
+                  <h1>When you start recognising that you're having fun, life can be delightful. </h1>
+                  <div class="col-md-12 text-center">
+                  </div>
+                  <div class="d-flex justify-content-center">
+                  <a class="btn btn-primary btn-lg" role="button" href="#"><i class="fa fa-user-plus"></i>Join Now</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <Footer />
+        </div>
     )
   }
 }
 
 export default Home
+
+

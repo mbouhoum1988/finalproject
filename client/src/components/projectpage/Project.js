@@ -19,19 +19,12 @@ export class Project extends Component {
     places:[],
     search:''
   }
-
+  
   searchPlaces = query => {
     API.search(query)
     .then(res => {
-      const result = res.data.results.map((place) => {
-          return (place);
-      })
-      this.setState(
-        { 
-            result
-      }
-      )
-      console.log(result);
+      const result = res.data.results.map((place) => place);
+      this.setState({ result })
     }
     )
       .catch(err => console.log(err));
@@ -98,7 +91,7 @@ export class Project extends Component {
                 {!this.state.result.length ? (
                   <h1 className="nobook">search for your next destination</h1>
                 ) : (
-                    this.state.result.map((place, index) => {
+                    this.state.result.map((place, index) => {                      
                       return (
                         <Details
                           key={index}
@@ -107,7 +100,7 @@ export class Project extends Component {
                           address={place.formatted_address}
                           type={place.types}
                           savePlace ={this.savePlace}
-                          />
+                        />
                       );
                     }
                     )
