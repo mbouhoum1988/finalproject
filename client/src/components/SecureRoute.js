@@ -31,10 +31,10 @@ class SecureRoute extends Component {
             localStorage.setItem('user', user.uid);
           } 
           else {
+            localStorage.removeItem('user');
             this.setState({
               user: null
             });
-            localStorage.removeItem('user');
           }
         })
       }
