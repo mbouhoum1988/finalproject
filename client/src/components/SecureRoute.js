@@ -6,7 +6,6 @@ import Project from './projectpage/Project'
 import General from './homepages/General' 
 import Saved from './projectpage/Saved'
 
-
 class SecureRoute extends Component {
     state = {
         user: null
@@ -14,6 +13,12 @@ class SecureRoute extends Component {
     
       componentDidMount() {
         this.authListener();
+      }
+
+      static getDerivedStateFromProps (state) {
+        const cachedUser = localStorage.getItem('user')
+        if (cachedUser) state = { ...state, user: cachedUser }
+        return state
       }
     
       authListener() {
@@ -33,6 +38,7 @@ class SecureRoute extends Component {
           }
         })
       }
+
       render() {
         return (
           <div> 
