@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Jumbotron = () => {
+const Jumbotron1 = () => {
   return (
-    <div class="jumbotron">
+    <div class="jumbotron1">
         <div class="container"> 
             <div class="row">
-                <div id="jumbotronText"class="col-md-10 get-it animated slideInRight">
-                  <h1>"Find your next adventure below!" </h1>
+                <div id="jumbotronText1"class="col-md-10 get-it animated slideInRight">
+                  <h1>My Places </h1>
                   <div class="col-md-12 text-center">
                   </div>
                 </div>
@@ -17,4 +17,4 @@ const Jumbotron = () => {
   )
 }
     
-export default Jumbotron
+export default Jumbotron1

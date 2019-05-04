@@ -89,7 +89,7 @@ export class Project extends Component {
                 heading={"Search:"}
               >
                 {!this.state.result.length ? (
-                  <h1 className="nobook">search for your next destination</h1>
+                  <h1 className="nobook">Search For Your Next Destination</h1>
                 ) : (
                     this.state.result.map((place, index) => {                      
                       return (
