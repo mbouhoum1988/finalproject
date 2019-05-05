@@ -65,6 +65,8 @@ export class Project extends Component {
         name: place.name,
         address: place.formatted_address,
         type: place.types,
+        lat: place.geometry.location.lat,
+        lng: place.geometry.location.lng
       })
         .then(res => this.loadPlaces())
         .catch(err => console.log(err));
@@ -99,6 +101,8 @@ export class Project extends Component {
                           name={place.name}
                           address={place.formatted_address}
                           type={place.types}
+                          lat={place.geometry.location.lat}
+                          lng={place.geometry.location.lng}
                           savePlace ={this.savePlace}
                         />
                       );

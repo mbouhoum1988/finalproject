@@ -9,7 +9,9 @@ const placeSeed = [
   {
     name: "The Hunger Games",
     address: "http://books.google.com/books?id=sazytgAACAAJ&dq=title:The+Hunger+Games&hl=&source=gbs_api",
-    type: ["Suzanne Collins"]
+    type: ["Suzanne Collins"],
+    lat: 12345,
+    lng: 34567
   }
 ];
 

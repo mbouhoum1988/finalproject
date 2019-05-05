@@ -105,14 +105,33 @@ h1 a, h1 a:hover {
 .place-detail {
   margin: 20px;
   border: 1px solid black;
-  min-height: 200px;
+  min-height: 240px;
   background: lightgray;
   padding: 15px;
+}
+.detail-data{
+  float: left;
+  width: 40%;
 }
 .btn-save{
   margin: 10px;
   float: right;
 }
+<<<<<<< HEAD
+=======
+.map{
+  float: left;
+  width: 40%;
+  min-height: 200px;
+  text-align: center;
+  background: #fff;
+  margin-left: 40px;
+}
+.mapcontent{
+  display: block;
+  margin:0 auto;
+}
+>>>>>>> 63985695682eeb78db2951271ea8e607180eb4e2
 .btn-danger{
   margin-right: 10px;
 }
