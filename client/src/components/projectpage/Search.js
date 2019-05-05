@@ -12,7 +12,7 @@ const Search = (props) => {
                     value={props.name}
                     onChange={props.handleInput} />
             <button 
-                className="btn btn-primary btn-search"
+                className="btn-primary btn-search"
                 onClick={props.handleClick}
                 > Search </button>
       </div>
