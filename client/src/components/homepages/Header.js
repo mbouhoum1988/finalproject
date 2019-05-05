@@ -10,7 +10,6 @@ import React from 'react'
               <li><a href='/Home'>Home</a></li>
               <li><a href='/signin'>Login</a></li>
               <li><a href='/signup'>Sign up</a></li>
-              <li><p>{props.firstName}</p></li>
             </ul>
         </div>
     </nav>

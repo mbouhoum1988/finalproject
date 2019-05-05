@@ -57,6 +57,8 @@ export class Saved extends Component {
                           name={place.name}
                           address={place.address}
                           type={place.type}
+                          lat={place.lat}
+                          lng={place.lng}
                           deletePlaces={this.deletePlaces}
                           />
                       );
