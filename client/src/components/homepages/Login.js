@@ -7,14 +7,14 @@ import fire from '../../config/fire'
 
 class Login extends Component {
 
-    state ={
+    state = {
         email: '',
         password: ''
     }
 
     login = (e) => {
         e.preventDefault();
-        fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then( (u) =>{}).catch( err => {
+        fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u) => { }).catch(err => {
             console.log(err);
             this.setState({
                 email: '',
@@ -27,47 +27,51 @@ class Login extends Component {
         this.setState({
             [e.target.name]: e.target.value
         });
-    } 
+    }
 
-  render() {
-    return (
-     
-     <div>  
-     <Header /> 
-     <h2 className='text-center'>Login</h2>
-      <div className="col-md-4 login">
-        <form>
-            <div className="form-group">
-                <label htmlFor="email">Email Address</label>
-                <input 
-                    value={this.state.email} 
-                    onChange={this.handleChange}
-                    type="email"
-                    name="email"
-                    className="form-control"
-                    id="email"
-                    placeholder="Enter email" 
-                /> 
-            </div>    
-            <div className="form-group">
-                <label htmlFor="password">Password</label>
-                <input 
-                    value={this.state.password} 
-                    onChange={this.handleChange}
-                    type="password"
-                    name="password"
-                    className="form-control"
-                    id="password"
-                    placeholder="Enter password" 
-                /> 
-            </div>  
-            <button type="submit" onClick={this.login} className="btn btn-primary">Login</button>  
-        </form>
-      </div>
-      <Footer />
-      </div>
-    )
-  }
-}
+    render() {
+        return (
+            <div>
+                <Header />
+                <div className="container">
+                    <h2 className='text-center'>Login</h2>
+                    <div className="col-md-4 login">
+                        <form>
+                            <div className="form-group">
+                                <label htmlFor="email">Email Address</label>
+                                <input
+                                    value={this.state.email}
+                                    onChange={this.handleChange}
+                                    type="email"
+                                    name="email"
+                                    className="form-control"
+                                    id="email"
+                                    placeholder="Enter email"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="password">Password</label>
+                                <input
+                                    value={this.state.password}
+                                    onChange={this.handleChange}
+                                    type="password"
+                                    name="password"
+                                    className="form-control"
+                                    id="password"
+                                    placeholder="Enter password"
+                                />
+                            </div>
 
-export default Login
+                            <button type="submit" onClick={this.login} className="btn btn-primary">Login</button>
+
+                        </form>
+                    </div>
+                </div>
+                <Footer />
+            </div>
+
+                )
+            }
+        }
+        
+        export default Login

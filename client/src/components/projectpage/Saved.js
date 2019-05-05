@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import HeaderProject from './HeaderProject'
-import Jumbotron from './Jumbotron'
+import Jumbotron from './Jumbotron1'
 import Card from './Card'
 import Myplaces from './Myplaces'
 import Footer from './Footer'
