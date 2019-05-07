@@ -5,7 +5,7 @@ import React from 'react'
 
     <nav className='nav-bar'>
         <div className='headercontent'>
-            <h1><i className="fas fa-filter"></i>Plus +</h1>
+            <h1><i className="fas fa-filter"></i>Plus+</h1>
             <ul>
               <li><a href='/Home'>Home</a></li>
               <li><a href='/signin'>Login</a></li>
