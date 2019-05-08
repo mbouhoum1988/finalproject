@@ -2,12 +2,12 @@ import React from 'react'
 
 const Jumbotron = () => {
   return (
-    <div class="jumbotron">
-        <div class="container"> 
-            <div class="row">
-                <div id="jumbotronText"class="col-md-10 get-it animated slideInRight">
+    <div className="jumbotron">
+        <div className="container"> 
+            <div className="row">
+                <div id="jumbotronText"className="col-md-10 get-it animated slideInRight">
                   <h1>"Find your next adventure below!" </h1>
-                  <div class="col-md-12 text-center">
+                  <div className="col-md-12 text-center">
                   </div>
                 </div>
             </div>
