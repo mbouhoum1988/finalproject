@@ -11,22 +11,22 @@ import API from '../../utils/API'
 
 export class Project extends Component {
   static defaultProps = {
-      user: []
+    user: []
   }
 
-  state={
-    result:[],
-    places:[],
-    search:''
+  state = {
+    result: [],
+    places: [],
+    search: ''
   }
-  
+
   searchPlaces = query => {
     API.search(query)
-    .then(res => {
-      const result = res.data.results.map((place) => place);
-      this.setState({ result })
-    }
-    )
+      .then(res => {
+        const result = res.data.results.map((place) => place);
+        this.setState({ result })
+      }
+      )
       .catch(err => console.log(err));
   };
 
@@ -42,16 +42,16 @@ export class Project extends Component {
     event.preventDefault();
     this.searchPlaces(this.state.search);
     this.setState({
-        search: " "
+      search: " "
     })
   };
 
   loadPlaces = () => {
     API.getPlaces()
-    .then(res => 
-            this.setState({ places: res.data})
-    )
-    .catch(err => console.log(err));
+      .then(res =>
+        this.setState({ places: res.data })
+      )
+      .catch(err => console.log(err));
   };
 
   savePlace = event => {
@@ -60,7 +60,7 @@ export class Project extends Component {
     const place = this.state.result[index];
     console.log(index)
     console.log(place)
-    if (place) {      
+    if (place) {
       API.savePlace({
         name: place.name,
         address: place.formatted_address,
@@ -71,43 +71,43 @@ export class Project extends Component {
     }
   };
 
-    logout= () => {
-      fire.auth().signOut();
+  logout = () => {
+    fire.auth().signOut();
   }
 
   render() {
     return (
       <div >
-        <HeaderProject logout={this.logout}/>
+        <HeaderProject logout={this.logout} />
         <Jumbotron />
-        <Search 
+        <Search
           value={this.state.search}
           handleInput={this.handleInput}
           handleClick={this.handleClick}
         />
         <Card
-                heading={"Search:"}
-              >
-                {!this.state.result.length ? (
-                  <h1 className="nobook">Search For Your Next Destination</h1>
-                ) : (
-                    this.state.result.map((place, index) => {                      
-                      return (
-                        <Details
-                          key={index}
-                          index={index}
-                          name={place.name}
-                          address={place.formatted_address}
-                          type={place.types}
-                          savePlace ={this.savePlace}
-                        />
-                      );
-                    }
-                    )
-                )}
-              </Card> 
+          heading={"Search:"}
+        >
+          {!this.state.result.length ? (
+            <h1 className="nobook">Search For Your Next Destination</h1>
+          ) : (
+              this.state.result.map((place, index) => {
+                return (
+                  <Details
+                    key={index}
+                    index={index}
+                    name={place.name}
+                    address={place.formatted_address}
+                    type={place.types}
+                    savePlace={this.savePlace}
+                  />
+                );
+              }
+              )
+            )}
+        </Card>
 
-        <Footer />    
+        <Footer />
       </div>
     )
   }

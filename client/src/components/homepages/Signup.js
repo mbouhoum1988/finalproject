@@ -31,8 +31,8 @@ export class Signup extends Component {
             <div>
                 <Header />
                 <div className="container">
-                    <h2 className='text-center'>Register Here</h2>
-                    <div className="col-md-4 login">
+                    <h2 className='text-center text-signup'>Register Here</h2>
+                    <div className="col-md-4 signup">
                         <form>
                             <div className="form-group">
                                 <label htmlFor="firstName">First Name</label>
@@ -59,7 +59,7 @@ export class Signup extends Component {
                                 />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="email">Email address</label>
+                                <label htmlFor="email">Email Address</label>
                                 <input
                                     value={this.state.email}
                                     onChange={this.handleChange}
