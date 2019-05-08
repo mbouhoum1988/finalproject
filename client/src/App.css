@@ -64,6 +64,7 @@ body{
   -webkit-box-shadow:3px 3px 4px rgba(0,0,0,0.2);
   box-shadow:3px 3px 4px rgba(0,0,0,0.2);
   margin-bottom:50px;
+  margin-bottom:-120px;
   margin-top:150px;
 }
 .signup{
@@ -80,6 +81,7 @@ body{
   -webkit-box-shadow:3px 3px 4px rgba(0,0,0,0.2);
   box-shadow:3px 3px 4px rgba(0,0,0,0.2);
   margin-bottom:-185px;
+  margin-bottom:-200px;
   margin-top:150px;
 }
 .submit{

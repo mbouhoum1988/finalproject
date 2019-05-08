@@ -33,40 +33,38 @@ export class Saved extends Component {
       .then(res => this.loadPlaces())
       .catch(err => console.log(err));
   };
-
-  logout = () => {
+  logout= () => {
     fire.auth().signOut();
-  }
-
+}
   render() {
     return (
       <div>
-        <HeaderProject logout={this.logout} />
-        <Jumbotron />
-        <Card
-          heading={"Saved Places:"}
-        >
-          {!this.state.places.length ? (
-            <h1 className="nobook">You Have No Places Saved</h1>
-          ) : (
-              this.state.places.map((place) => {
-                return (
-                  <Myplaces
-                    key={place._id}
-                    index={place._id}
-                    name={place.name}
-                    address={place.address}
-                    type={place.type}
-                    lat={place.lat}
-                    lng={place.lng}
-                    deletePlaces={this.deletePlaces}
-                  />
-                );
-              }
-              )
-            )}
-        </Card>
-        <Footer />
+      <HeaderProject logout={this.logout}/>
+      <Jumbotron />
+      <Card
+                heading={"saved places:"}
+              >
+                {!this.state.places.length ? (
+                  <h1 className="nobook">You have no places saved</h1>
+                ) : (
+                    this.state.places.map((place) => {
+                      return (
+                        <Myplaces
+                          key={place._id}
+                          index={place._id}
+                          name={place.name}
+                          address={place.address}
+                          type={place.type}
+                          lat={place.lat}
+                          lng={place.lng}
+                          deletePlaces={this.deletePlaces}
+                          />
+                      );
+                    }
+                    )
+                )}
+              </Card> 
+              <Footer />
       </div>
     )
   }

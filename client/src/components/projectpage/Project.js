@@ -65,6 +65,8 @@ export class Project extends Component {
         name: place.name,
         address: place.formatted_address,
         type: place.types,
+        lat: place.geometry.location.lat,
+        lng: place.geometry.location.lng
       })
         .then(res => this.loadPlaces())
         .catch(err => console.log(err));
@@ -86,27 +88,28 @@ export class Project extends Component {
           handleClick={this.handleClick}
         />
         <Card
-          heading={"Search:"}
-        >
-          {!this.state.result.length ? (
-            <h1 className="nobook">Search For Your Next Destination</h1>
-          ) : (
-              this.state.result.map((place, index) => {
-                return (
-                  <Details
-                    key={index}
-                    index={index}
-                    name={place.name}
-                    address={place.formatted_address}
-                    type={place.types}
-                    savePlace={this.savePlace}
-                  />
-                );
-              }
-              )
-            )}
-        </Card>
-
+            heading={"Search:"}
+              >
+                {!this.state.result.length ? (
+                  <h1 className="nobook">Search For Your Next Destination</h1>
+                ) : (
+                    this.state.result.map((place, index) => {                      
+                      return (
+                        <Details
+                          key={index}
+                          index={index}
+                          name={place.name}
+                          address={place.formatted_address}
+                          type={place.types}
+                          lat={place.geometry.location.lat}
+                          lng={place.geometry.location.lng}
+                          savePlace ={this.savePlace}
+                        />
+                      );
+                    }
+                    )
+                )}
+              </Card> 
         <Footer />
       </div>
     )

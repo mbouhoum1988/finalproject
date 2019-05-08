@@ -1,4 +1,5 @@
 import React from 'react';
+import Map from './Map'
 
 const Details = (props) => {
     return (
@@ -11,8 +12,14 @@ const Details = (props) => {
                 <h5>Address : {props.address}</h5>
                 <h5> Type :  {props.type.join(",  ")}</h5>
             </div>
+        <div className="map">
+        <div className="mapcontent">
+            <Map lat={props.lat}
+                 lng={props.lng}               
+            />
         </div>
-    );
+    </div>
+);
 }
 
 export default Details;
