@@ -1,10 +1,10 @@
 import React from 'react'
 
- const Header = (props) => {
+const Header = (props) => {
   return (
 
     <nav className='nav-bar'>
-        <div className='headercontent media-header'>
+           <div className='headercontent media-header'>
             <h1><i className="fas fa-filter"></i>Plus+</h1>
             <ul>
               <li><a href='/project'>Search</a></li>

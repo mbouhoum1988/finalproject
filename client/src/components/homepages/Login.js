@@ -70,8 +70,8 @@ class Login extends Component {
                 <Footer />
             </div>
 
-                )
-            }
-        }
-        
-        export default Login
+        )
+    }
+}
+
+export default Login

@@ -11,19 +11,19 @@ import API from '../../utils/API'
 export class Saved extends Component {
   static defaultProps = {
     user: []
-}
-    state = {
-      places: []
-    }
+  }
+  state = {
+    places: []
+  }
 
-    componentDidMount = () => {
-      this.loadPlaces();
-    }
+  componentDidMount = () => {
+    this.loadPlaces();
+  }
 
-    loadPlaces = () => {
-      API.getPlaces()
-      .then(res => 
-              this.setState({ places: res.data})
+  loadPlaces = () => {
+    API.getPlaces()
+      .then(res =>
+        this.setState({ places: res.data })
       )
       .catch(err => console.log(err));
   };
@@ -33,11 +33,9 @@ export class Saved extends Component {
       .then(res => this.loadPlaces())
       .catch(err => console.log(err));
   };
-
   logout= () => {
     fire.auth().signOut();
 }
-
   render() {
     return (
       <div>

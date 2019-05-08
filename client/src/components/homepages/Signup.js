@@ -59,7 +59,7 @@ export class Signup extends Component {
                                 />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="email">Email address</label>
+                                <label htmlFor="email">Email Address</label>
                                 <input
                                     value={this.state.email}
                                     onChange={this.handleChange}
