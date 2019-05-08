@@ -32,7 +32,7 @@ export class Signup extends Component {
                 <Header />
                 <div className="container">
                     <h2 className='text-center text-signup'>Register Here</h2>
-                    <div className="col-md-4 login">
+                    <div className="col-md-4 signup">
                         <form>
                             <div className="form-group">
                                 <label htmlFor="firstName">First Name</label>
