@@ -6,13 +6,13 @@ import './App.css'
 console.log(`${process.env.REACT_APP_API_KEY}`);
 
 class App extends Component {
-
+  
   render() {
     return (
       <div className="App">
         <Router>
-          <SecureRoute />
-        </Router>
+            <SecureRoute /> 
+        </Router>       
       </div>
     );
   }

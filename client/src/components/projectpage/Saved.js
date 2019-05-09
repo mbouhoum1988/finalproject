@@ -11,19 +11,19 @@ import API from '../../utils/API'
 export class Saved extends Component {
   static defaultProps = {
     user: []
-  }
-  state = {
-    places: []
-  }
+}
+    state = {
+      places: []
+    }
 
-  componentDidMount = () => {
-    this.loadPlaces();
-  }
+    componentDidMount = () => {
+      this.loadPlaces();
+    }
 
-  loadPlaces = () => {
-    API.getPlaces()
-      .then(res =>
-        this.setState({ places: res.data })
+    loadPlaces = () => {
+      API.getPlaces()
+      .then(res => 
+              this.setState({ places: res.data})
       )
       .catch(err => console.log(err));
   };
@@ -33,19 +33,21 @@ export class Saved extends Component {
       .then(res => this.loadPlaces())
       .catch(err => console.log(err));
   };
+
   logout= () => {
     fire.auth().signOut();
 }
+
   render() {
     return (
       <div>
       <HeaderProject logout={this.logout}/>
       <Jumbotron />
       <Card
-                heading={"saved places:"}
+                heading={"Saved Places:"}
               >
                 {!this.state.places.length ? (
-                  <h1 className="nobook">You have no places saved</h1>
+                  <h1 className="nobook">You Have No Places Saved</h1>
                 ) : (
                     this.state.places.map((place) => {
                       return (
