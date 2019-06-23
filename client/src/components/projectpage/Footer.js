@@ -8,7 +8,7 @@ class Footer extends Component {
                 <div className="col-sm-3 myCols">
                     <h5>Get started</h5>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="javascript:;">Home</a></li>
                         <li><a href="#">Signup</a></li>
                         <li><a href="#">Downloads</a></li>
                     </ul>

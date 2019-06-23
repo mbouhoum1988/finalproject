@@ -1,7 +1,7 @@
 const axios = require('axios');
 const router = require("express").Router();
 
-const BASEURL ="https://maps.googleapis.com/maps/api/place/textsearch/json?query=point+of+interest+in+"
+const BASEURL ="https://maps.googleapis.com/maps/api/place/textsearch/json?query=place+in+"
 const key="&key=AIzaSyCrt6AwoIdJpK1fTr4Qq6SObHysC6RFwS8";
 
 router.route("/:query").get((req, res) => {
