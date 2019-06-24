@@ -7,7 +7,7 @@ const Search = (props) => {
             <p></p>
             <input 
                     className="form-control" 
-                    placeholder="Search"
+                    placeholder="Enter city name"
                     name="search"
                     value={props.name}
                     onChange={props.handleInput} />
